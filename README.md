@@ -1,5 +1,4 @@
 # Booki
----
 Integration d'une maquette pour le site Booki.  
 Utilisation de HTML5 et CSS3.
 ---  
