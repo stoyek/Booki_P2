@@ -2,76 +2,312 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booky</title>
+    <script src="https://kit.fontawesome.com/f6c4359624.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Booki</title>
 </head>
 <body>
-    <Header>
-        <div class="logo"></div>
-        <nav class="nav">
-            <div class="nav_housing"></div>
-            <div class="nav_activity"></div>
+
+    <header>
+        <a href="#" id="header_logo">
+            <img id="header_logo_img" src="./images/logo/Booki.png" alt="Logo du site Booki">
+        </a>
+        <nav id="header_nav">
+            <a href="" id="header_nav_link">Hébergements</a>
+            <a href="" id="header_nav_link">Activités</a>
         </nav>
-    </Header>
+    </header>
 
     <!-- Main -->
-    <!-- Research -->
-    <section class="search">
-        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-        <div class="title_info">Enplein centre ville ou en pleine nature</div>
-        <div class="search_bar">
-            <!--
-                logo
-                form
-                button
-            -->
-        </div>
-        <div class="filter">
-            <!--
-                Filtres:
-                lgogo + Economique
-                Logo + Familial
-                Logo + Romantique
-                Logo + Animaux autorisés
-            -->
-        </div>
-        <div class="info">
-            <!--
-                Logo
-                Plus de 500 logements sont disponible dans cette ville
-            -->
-        </div>
-    </section>
+    <main>
 
-    <!-- Hébergements -->
-    <section class="housing">
+        <!-- Research -->
+        <section id="search">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <div id="title_info">En plein centre ville ou en pleine nature</div>
 
-        <!-- Hébergements à Marseille -->
-        <div class="housing_card">
-            <h2>Hébergements à Marseille</h2>
-            <!-- 6 CARDS -->
-        </div>
+            <div id="search_bar">
+                <form action="" method="get">
+                    <label for="search"><i class="fa-solid fa-location-dot"></i></label>
+                    <input type="text" name="search">
+                    <input type="submit" value="Rechercher">
+                </form>
+            </div>
 
-        <!-- Les plus populaires -->
-        <div class="best">
-            <h2>Les plus populaires</h2>
-            <!-- 3 Cards -->
-        </div>
-    </section>
+            <div id="filter">
+                <p>Filtres</p>
+                <div id="filter_economic">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <p>Economique</p>
+                </div>
+                <div id="filter_familial">
+                    <i class="fa-solid fa-child-reaching"></i>
+                    <p>Familial</p>
+                </div>
+                <div id="filter_romantic">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Romantique</p>
+                </div>
+                <div id="filter_animals">
+                    <i class="fa-solid fa-dog"></i>
+                    <p>Animaux autorisés</p>
+                </div>
+            </div>
 
-    <!-- Activités -->
-    <section class="activity">
-        <h2>Activités à Marseille</h2>
-        <div class="activity_Cards">
-            <!-- 6 Cards -->
-        </div>
-    </section>
+            <div id="info">
+                <i class="fa-solid fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+
+        <!-- Hébergements -->
+        <section id="housing">
+
+            <!-- Hébergements à Marseille -->
+            <div id="housing_card">
+                <h2>Hébergements à Marseille</h2>
+                <div id="housing_cards_container">
+                    <figure>
+                        <a href="#">
+                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
+                            <figcaption>
+                                <p class="cards_title">Auberge La Cannebière</p>
+                                <p class="cards_info">Nuit à partir de 25€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
+                            <figcaption>
+                                <p class="cards_title">Auberge La Cannebière</p>
+                                <p class="cards_info">Nuit à partir de 25€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
+                            <figcaption>
+                                <p class="cards_title">Auberge La Cannebière</p>
+                                <p class="cards_info">Nuit à partir de 25€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
+                            <figcaption>
+                                <p class="cards_title">Auberge La Cannebière</p>
+                                <p class="cards_info">Nuit à partir de 25€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
+                            <figcaption>
+                                <p class="cards_title">Auberge La Cannebière</p>
+                                <p class="cards_info">Nuit à partir de 25€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
+                            <figcaption>
+                                <p class="cards_title">Auberge La Cannebière</p>
+                                <p class="cards_info">Nuit à partir de 25€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <p>Afficher plus</p>
+            </div>
+
+            <!-- Les plus populaires -->
+            <aside id="best_cards">
+                <h2><i class="fa-solid fa-star"></i>Les plus populaires</h2>
+                <div id="best_cards_container">
+                    <figure>
+                        <a href="#">
+                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
+                            <figcaption>
+                                <p class="cards_title">Auberge La Cannebière</p>
+                                <p class="cards_info">Nuit à partir de 25€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
+                            <figcaption>
+                                <p class="cards_title">Auberge La Cannebière</p>
+                                <p class="cards_info">Nuit à partir de 25€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
+                            <figcaption>
+                                <p class="cards_title">Auberge La Cannebière</p>
+                                <p class="cards_info">Nuit à partir de 25€</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </aside>
+        </section>
+
+        <!-- Activités -->
+        <section id="activity">
+            <div id="activity_Cards">
+                <h2>Activités à Marseille</h2>
+                <div id="activity_cards_container">
+                    <figure>
+                        <a href="#">
+                            <img src="" alt="">
+                            <figcaption>
+                                <p class="cards_title"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="" alt="">
+                            <figcaption>
+                                <p class="cards_title"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="" alt="">
+                            <figcaption>
+                                <p class="cards_title"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="" alt="">
+                            <figcaption>
+                                <p class="cards_title"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="" alt="">
+                            <figcaption>
+                                <p class="cards_title"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="" alt="">
+                            <figcaption>
+                                <p class="cards_title"></p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <div class="about"></div>
-        <div class="our_house"></div>
-        <div class="assistance"></div>
+        <div id="about">
+            <h3>A propos</h3>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div id="our_house">
+            <h3>Nos hébergements</h3>
+            <ul>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+        </div>
+        <div id="help">
+            <h3>Assistance</h3>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
