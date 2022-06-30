@@ -10,10 +10,18 @@
     color: #000;
 }
 
+input{
+    border:none;
+}
 
+header, main{
+    margin: 0px 50px;
+
+}
+
+/* Header */
 
 header{
-    margin: 0px 50px;
     height: 130px;
     display: flex;
     justify-content: space-between;
@@ -47,12 +55,105 @@ header{
     color: #0065FC;
 }
 
+/* Research */
 
-main{
-    margin: 0px 50px;
+h1, h2, h3, .cards_title, #search_bar_text{
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+#search_bar{
+    margin: 15px 0px;
+}
+
+#search_bar_logo::before{
+    /* align-self: center; */
+    padding: 11px 14px;
+    border-radius: 10px 0px 0px 10px;
+
+    background-color: #f2f2f2;
+    position: relative;
+    top: 1px;
+}
+
+#search_bar_text{
+
+    position: relative;
+    right: 5px;
+    border: solid 1px #F2F2F2;
+    margin: 0px;
+    padding: 10px;
+    /* height: 40px; */
+}
+
+#search_bar_btn{
+    position: relative;
+    right: 10px;
+    padding: 11px 15px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    color: #fff;
+}
+
+/* Filter */
+
+#search_filter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 20px 0px;
+
+
+    border: solid 1px ;
+}
+
+#search_filter_part{
+    height: 40px;
+    margin: 5px;
+    border-radius: 50px;
+    
+    border: solid 2px #F2F2F2;
+    border-left: rgba(0,0,0,0);
+}
+
+#search_filter_part_logo{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 2px;
+    bottom: 3px;
+    height: 42px;
+    width: 42px;
+    border-radius: 50px;
+    /* text-align: center;
+    position: relative; */
+    
+    color: #0065FC;
+    /* border: 2px solid #DEEBFF; */
+    background-color: #DEEBFF;
+    
+}
+#search_filter_part_logo::before{
+}
+
+#search_filter_part_text{
+    float: right;
+    padding: 9px;
+    padding-right: 20px;
+    text-align: center;
 }
 
 
+
+/* Footer */
 
 footer{
     background-color: #f2f2f2;

@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <script src="https://kit.fontawesome.com/f6c4359624.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,33 +32,35 @@
 
             <div id="search_bar">
                 <form action="" method="get">
-                    <label for="search"><i class="fa-solid fa-location-dot"></i></label>
-                    <input type="text" name="search">
-                    <input type="submit" value="Rechercher">
+                    <!-- <label id="search_bar_label" for="search"> -->
+                        <i id="search_bar_logo" class="fa-solid fa-location-dot"></i>
+                    <!-- </label> -->
+                    <input id="search_bar_text" type="text" name="search" placeholder="Marseille, France">
+                    <input id="search_bar_btn" type="submit" value="Rechercher">
                 </form>
             </div>
 
-            <div id="filter">
+            <div id="search_filter">
                 <p>Filtres</p>
-                <div id="filter_economic">
-                    <i class="fa-solid fa-money-bill-wave"></i>
-                    <p>Economique</p>
-                </div>
-                <div id="filter_familial">
-                    <i class="fa-solid fa-child-reaching"></i>
-                    <p>Familial</p>
-                </div>
-                <div id="filter_romantic">
-                    <i class="fa-solid fa-heart"></i>
-                    <p>Romantique</p>
-                </div>
-                <div id="filter_animals">
-                    <i class="fa-solid fa-dog"></i>
-                    <p>Animaux autorisés</p>
-                </div>
+                <a id="search_filter_part" href="#">
+                    <i id="search_filter_part_logo" class="fa-solid fa-money-bill-wave"></i>
+                    <p id="search_filter_part_text">Economique</p>
+                </a>
+                <a id="search_filter_part" href="#">
+                    <i id="search_filter_part_logo" class="fa-solid fa-child-reaching"></i>
+                    <p id="search_filter_part_text">Familial</p>
+                </a>
+                <a id="search_filter_part" href="#">
+                    <i id="search_filter_part_logo" class="fa-solid fa-heart"></i>
+                    <p id="search_filter_part_text">Romantique</p>
+                </a>
+                <a id="search_filter_part" href="#">
+                    <i id="search_filter_part_logo" class="fa-solid fa-dog"></i>
+                    <p id="search_filter_part_text">Animaux autorisés</p>
+                </a>
             </div>
 
-            <div id="info">
+            <div id="search_info">
                 <i class="fa-solid fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
