@@ -1,179 +1,317 @@
-*{
-    font-family: "Raleway", "sans-sérif";
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: none;
-    list-style-type: none;
-    color: #000;
+* {
+  font-family: "Raleway", "sans-sérif";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
 }
 
-input{
-    border:none;
+input {
+  border: none;
 }
 
-header, main{
-    margin: 0px 50px;
-
+header,
+main {
+  max-width: 1280px;
+  margin: auto;
 }
 
-/* Header */
+/* ----- Bold ----- */
 
-header{
-    height: 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h1,
+h2,
+h3,
+em,
+#search_bar_btn,
+#search_bar_text,
+.search_filter_part_text, 
+.housing_cards_title,
+.popular_cards_title{
+  font-weight: bold;
 }
 
-#header_logo{
-    /* border: solid 2px red; */
-    height: 50px;
+/* ----- Header ----- */
+
+header {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#header_logo_img{
-    height: 100%;
+#header_logo {
+  /* border: solid 2px red; */
+  height: 50px;
 }
 
-#header_nav{
-    display: flex;
-    /* border: solid 2px purple; */
-    height: 100%;
-    align-items: center;
+#header_logo_img {
+  height: 100%;
 }
 
-.header_nav_link{
-    padding: 55px 15px;
-    border-top:solid 2px white;
-    transition-duration: .3s;
+#header_nav {
+  display: flex;
+  /* border: solid 2px purple; */
+  height: 100%;
+  align-items: center;
 }
 
-.header_nav_link:hover{
-    border-top:solid 2px #0065FC;
-    color: #0065FC;
+.header_nav_link {
+  padding: 55px 15px;
+  border-top: solid 2px white;
+  transition-duration: 0.3s;
 }
 
-/* Research */
-
-h1, h2, h3, .cards_title, #search_bar_text{
-    font-weight: bold;
+.header_nav_link:hover {
+  border-top: solid 2px #0065fc;
+  color: #0065fc;
 }
+
+/* ----- Research ----- */
 
 h1 {
-    font-size: 20px;
-    margin: 5px 0px;
+  font-size: 20px;
+  margin: 5px 0px;
 }
 
-#search_bar{
-    margin: 15px 0px;
+#search_bar {
+  margin: 15px 0px;
 }
 
-#search_bar_logo::before{
-    /* align-self: center; */
-    padding: 11px 14px;
-    border-radius: 10px 0px 0px 10px;
+#search_bar_logo::before {
+    border: 1px solid #f2f2f2;
+  padding: 17px;
+  border-radius: 10px 0px 0px 10px;
 
-    background-color: #f2f2f2;
-    position: relative;
-    top: 1px;
+  background-color: #f2f2f2;
+  position: relative;
+  top: 1px;
 }
 
-#search_bar_text{
-
-    position: relative;
-    right: 5px;
-    border: solid 1px #F2F2F2;
-    margin: 0px;
-    padding: 10px;
-    /* height: 40px; */
+#search_bar_text {
+  position: relative;
+  right: 5px;
+  border: solid 1px #f2f2f2;
+  margin: 0px;
+  padding: 15px;
+  font-size: 16px;
+  /* height: 40px; */
 }
 
-#search_bar_btn{
-    position: relative;
-    right: 10px;
-    padding: 11px 15px;
-    border-radius: 0px 10px 10px 0px;
-    background-color: #0065FC;
-    color: #fff;
+#search_bar_btn {
+  position: relative;
+  right: 10px;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #0065fc;
+  color: #fff;
 }
 
-/* Filter */
+/* ----- Filter ----- */
 
-#search_filter{
+#search_filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 20px 0px;
+}
+
+.search_filter_part {
+  position: relative;
+  height: 50px;
+  margin: 5px;
+  border-radius: 50px;
+
+  overflow: hidden;
+  border: solid 2px #f2f2f2;
+  border-left: rgba(0, 0, 0, 0);
+}
+
+.search_filter_part_logo {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 1px;
+  bottom: 2px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+
+  color: #0065fc;
+  background-color: #deebff;
+}
+
+.search_filter_part_text {
+  float: right;
+  padding: 14px;
+  text-align: center;
+}
+
+/* ----- Filter Icon Hover ----- */
+
+.search_filter_part::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+
+  transition: all 0.3s ease-out;
+  background-color: #deebff;
+}
+.search_filter_part:hover {
+  border-color: #deebff;
+}
+.search_filter_part:hover::before {
+  width: 100%;
+  border-radius: 50px;
+}
+
+/* ----- Research ----- */
+
+#search_info {
+  display: flex;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+#search_info_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  border: solid 2px #f2f2f2;
+  border-radius: 50px;
+  color: #0065fc;
+}
+
+#search_info_text {
+  margin: 0px 15px;
+}
+
+/* ----- Housing ----- */
+
+#main_page_container {
+    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#housing_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  width: 65%;
+  height: 600px;
+  padding: 40px;
+}
+
+#housing_cards_container {
+  align-items: center;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* border: solid 1px red; */
+}
+.housing_cards {
+  width: 32%;
+  height: 45%;
+  padding: 2px;
+  overflow: hidden;
+  /* border: solid 1px blue; */
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 10px #e6e6e6f4;
+}
+
+.housing_cards_img {
+  padding: 2px;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.housing_cards_info {
+  margin-left: 5px;
+}
+
+.housing_cards_title {
+  font-size: 16px;
+  margin: 2px 0px;
+}
+.housing_cards_text {
+  font-size: 15px;
+  margin: 2px 0px;
+}
+
+/* ----- Most popular ----- */
+#popular_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  width: 33%;
+  height: 600px;
+  padding: 40px;
+}
+
+#popular_cards_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.popular_cards {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 140px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.popular_cards_img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.popular_cards_info{
+    margin: 10px 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    margin: 20px 0px;
-
-
-    border: solid 1px ;
+}
+.popular_cards_text{
+    margin: 10px 0px;
 }
 
-.search_filter_part{
-    height: 40px;
-    margin: 5px;
-    border-radius: 50px;
-    
-    border: solid 2px #F2F2F2;
-    border-left: rgba(0,0,0,0);
+/* ----- Star color ----- */
+
+.ok{
+    color: #0065fc;
+}
+.no{
+    color: #f2f2f2;
 }
 
-.search_filter_part_logo{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    right: 2px;
-    bottom: 3px;
-    height: 42px;
-    width: 42px;
-    border-radius: 50px;
-    /* text-align: center;
-    position: relative; */
-    
-    color: #0065FC;
-    /* border: 2px solid #DEEBFF; */
-    background-color: #DEEBFF;
-    
-}
-.search_filter_part_logo::before{
-}
-
-.search_filter_part_text{
-    float: right;
-    padding: 9px;
-    padding-right: 20px;
-    text-align: center;
-}
-
-
-
-/* Footer */
-
-footer{
-    background-color: #f2f2f2;
-    padding: 0px 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Logo du titre "Les plus populaires" */
-h2 i{
-    float: right;
-}
+/* --------------------- */

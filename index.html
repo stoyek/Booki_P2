@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <script src="https://kit.fontawesome.com/f6c4359624.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Booki</title>
 </head>
+
 <body>
 
     <header>
@@ -25,6 +27,7 @@
     <!-- Main -->
     <main>
 
+        <!-- Repair: Replace your i elements with em or strong.  -->
         <!-- Research -->
         <section id="search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -32,8 +35,9 @@
 
             <div id="search_bar">
                 <form method="get">
+                    <!-- aria - label -->
                     <!-- <label id="search_bar_label" for="search"> -->
-                        <i id="search_bar_logo" class="fa-solid fa-location-dot"></i>
+                    <i id="search_bar_logo" class="fa-solid fa-location-dot"></i>
                     <!-- </label> -->
                     <input id="search_bar_text" type="text" name="search" placeholder="Marseille, France">
                     <input id="search_bar_btn" type="submit" value="Rechercher">
@@ -43,7 +47,7 @@
             <div id="search_filter">
                 <p>Filtres</p>
                 <a class="search_filter_part" href="#">
-                    <i class="fa-solid fa-money-bill-wave search_filter_part_logo"></i>
+                    <em class="fa-solid fa-money-bill-wave search_filter_part_logo"></em>
                     <p class="search_filter_part_text">Economique</p>
                 </a>
                 <a class="search_filter_part" href="#">
@@ -61,170 +65,160 @@
             </div>
 
             <div id="search_info">
-                <i class="fa-solid fa-info"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <i id="search_info_icon" class="fa-solid fa-info fa-xs"></i>
+                <p id="search_info_text">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
 
         <!-- Hébergements -->
-        <section id="housing">
-
-            <!-- Hébergements à Marseille -->
-            <div id="housing_card">
+        <section id="main_page_container">
+            <div id="housing_container">
                 <h2>Hébergements à Marseille</h2>
                 <div id="housing_cards_container">
-                    <figure>
-                        <a href="#">
-                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
-                            <figcaption>
-                                <p class="cards_title">Auberge La Cannebière</p>
-                                <p class="cards_info">Nuit à partir de 25€</p>
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
+                    <a href="#" class="housing_cards">
+                        <figure>
+                            <img class="housing_cards_img" src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
+                            <figcaption class="housing_cards_info">
+                                <p class="housing_cards_title">Auberge de la Cannebière</p>
+                                <p class="housing_cards_text">Nuit à partir de <em>25€</em></p>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs no"></i>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
-                            <figcaption>
-                                <p class="cards_title">Auberge La Cannebière</p>
-                                <p class="cards_info">Nuit à partir de 25€</p>
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
+                        </figure>
+                    </a>
+                    <a href="#" class="housing_cards">
+                        <figure>
+                            <img class="housing_cards_img" src="./images/hebergements/2_hotel_du_port.jpg" alt="">
+                            <figcaption class="housing_cards_info">
+                                <p class="housing_cards_title">Hôtel du port</p>
+                                <p class="housing_cards_text">Nuit à partir de 52<em>€</em></p>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
-                            <figcaption>
-                                <p class="cards_title">Auberge La Cannebière</p>
-                                <p class="cards_info">Nuit à partir de 25€</p>
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
+                        </figure>
+                    </a>
+                    <a href="#" class="housing_cards">
+                        <figure>
+                            <img class="housing_cards_img" src="./images/hebergements/3_les_mouettes.jpg" alt="">
+                            <figcaption class="housing_cards_info">
+                                <p class="housing_cards_title">Hôtel Les mouettes</p>
+                                <p class="housing_cards_text">Nuit à partir de 76<em>€</em></p>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs no"></i>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
-                            <figcaption>
-                                <p class="cards_title">Auberge La Cannebière</p>
-                                <p class="cards_info">Nuit à partir de 25€</p>
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
+                        </figure>
+                    </a>
+                    <a href="#" class="housing_cards">
+                        <figure>
+                            <img class="housing_cards_img" src="./images/hebergements/4_hotel_de_la_mer.jpg" alt="">
+                            <figcaption class="housing_cards_info">
+                                <p class="housing_cards_title">Hôtel de le mer</p>
+                                <p class="housing_cards_text">Nuit à partir de 46<em>€</em></p>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs no"></i>
+                                <i class="fa-solid fa-star fa-xs no"></i>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
-                            <figcaption>
-                                <p class="cards_title">Auberge La Cannebière</p>
-                                <p class="cards_info">Nuit à partir de 25€</p>
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
+                        </figure>
+                    </a>
+                    <a href="#" class="housing_cards">
+                        <figure>
+                            <img class="housing_cards_img" src="./images/hebergements/5_auberge_le_panier.jpg" alt="">
+                            <figcaption class="housing_cards_info">
+                                <p class="housing_cards_title">Auberge le Panier</p>
+                                <p class="housing_cards_text">Nuit à partir de <em>23€</em></p>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs no"></i>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
-                            <figcaption>
-                                <p class="cards_title">Auberge La Cannebière</p>
-                                <p class="cards_info">Nuit à partir de 25€</p>
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
+                        </figure>
+                    </a>
+                    <a href="#" class="housing_cards">
+                        <figure>
+                            <img class="housing_cards_img" src="./images/hebergements/6_hotel_chez_amina.jpg" alt="">
+                            <figcaption class="housing_cards_info">
+                                <p class="housing_cards_title">Hôtel chez Amina</p>
+                                <p class="housing_cards_text">Nuit à partir de 96<em>€</em></p>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <i class="fa-solid fa-star fa-xs ok"></i>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                 </div>
-                <p>Afficher plus</p>
+                <a href="#">Afficher plus</a>
             </div>
-
-            <!-- Les plus populaires -->
-            <aside id="best_cards">
-                <h2><i class="fa-solid fa-star"></i>Les plus populaires</h2>
-                <div id="best_cards_container">
-                    <figure>
-                        <a href="#">
-                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
-                            <figcaption>
-                                <p class="cards_title">Auberge La Cannebière</p>
-                                <p class="cards_info">Nuit à partir de 25€</p>
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+            <aside id="popular_container">
+                <h2>Les plus populaires</h2>
+                <div id="popular_cards_container">
+                    <a href="#">
+                        <figure class="popular_cards">
+                            <img class="popular_cards_img" src="./images/hebergements/7_hotel_le_soleil_du_matin.jpg" alt="">
+                            <figcaption class="popular_cards_info">
+                                <div>
+                                    <p class="popular_cards_title">Hôtel Le soleil du matin</p>
+                                    <p class="popular_cards_text">Nuit à partir de 71<em>€</em></p>
+                                </div>
+                                <div class="popular_cards_star">
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
                                 </div>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
-                            <figcaption>
-                                <p class="cards_title">Auberge La Cannebière</p>
-                                <p class="cards_info">Nuit à partir de 25€</p>
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="popular_cards">
+                            <img class="popular_cards_img" src="./images/hebergements/8_au_coeur_de_l'eau.jpg" alt="">
+                            <figcaption class="popular_cards_info">
+                                <div>
+                                    <p class="popular_cards_title">Au coeur de l'eau Chambres d'hôtes</p>
+                                    <p class="popular_cards_text">Nuit à partir de 71<em>€</em></p>
+                                </div>
+                                <div class="popular_cards_star">
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs no"></i>
                                 </div>
                             </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="./images/hebergements/1_auberge_la_cannibiere.jpg" alt="">
-                            <figcaption>
-                                <p class="cards_title">Auberge La Cannebière</p>
-                                <p class="cards_info">Nuit à partir de 25€</p>
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure class="popular_cards">
+                            <img class="popular_cards_img" src="./images/hebergements/9_hotel_tout_bleu_et_blanc.jpg" alt="">
+                            <figcaption class="popular_cards_info">
+                                <div>
+                                    <p class="popular_cards_title">Hôtel Tout bleu et Blanc</p>
+                                    <p class="popular_cards_text">Nuit à partir de 68<em>€</em></p>
+                                </div>
+                                <div class="popular_cards_star">
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <i class="fa-solid fa-star fa-xs no"></i>
                                 </div>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                 </div>
             </aside>
         </section>
@@ -312,4 +306,5 @@
         </div>
     </footer>
 </body>
+
 </html>
