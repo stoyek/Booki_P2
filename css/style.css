@@ -15,7 +15,8 @@ input {
 }
 
 header,
-main {
+main,
+#footer_container {
   max-width: 1280px;
   margin: auto;
 }
@@ -28,9 +29,10 @@ h3,
 em,
 #search_bar_btn,
 #search_bar_text,
-.search_filter_part_text, 
+.search_filter_part_text,
 .housing_cards_title,
-.popular_cards_title{
+.popular_cards_title,
+.activity_cards_title {
   font-weight: bold;
 }
 
@@ -82,7 +84,7 @@ h1 {
 }
 
 #search_bar_logo::before {
-    border: 1px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
   padding: 17px;
   border-radius: 10px 0px 0px 10px;
 
@@ -202,7 +204,7 @@ h1 {
 /* ----- Housing ----- */
 
 #main_page_container {
-    margin-top: 30px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -215,26 +217,24 @@ h1 {
   width: 65%;
   height: 600px;
   padding: 40px;
+  gap: 20px;
 }
 
 #housing_cards_container {
   align-items: center;
-  width: 100%;
-  height: 85%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  /* border: solid 1px red; */
+  gap: 25px;
 }
 .housing_cards {
-  width: 32%;
-  height: 45%;
+  width: 230px;
+  height: 200px;
   padding: 2px;
   overflow: hidden;
-  /* border: solid 1px blue; */
   border-radius: 20px;
   background-color: white;
-  box-shadow: 5px 5px 10px #e6e6e6f4;
+  box-shadow: 2px 2px 5px 3px #e6e6e6f4;
 }
 
 .housing_cards_img {
@@ -268,13 +268,14 @@ h1 {
   width: 33%;
   height: 600px;
   padding: 40px;
+  gap: 20px;
 }
 
 #popular_cards_container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90%;
+  gap: 25px;
 }
 
 .popular_cards {
@@ -282,10 +283,10 @@ h1 {
   flex-direction: row;
   overflow: hidden;
   height: 140px;
-  width: 100%;
   border-radius: 20px;
   padding: 5px;
   background-color: #fff;
+  box-shadow: 2px 2px 5px 3px #e6e6e6f4;
 }
 
 .popular_cards_img {
@@ -295,23 +296,105 @@ h1 {
   border-radius: 20px 0px 0px 20px;
 }
 
-.popular_cards_info{
-    margin: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.popular_cards_info {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.popular_cards_text{
-    margin: 10px 0px;
+.popular_cards_text {
+  margin: 10px 0px;
 }
 
 /* ----- Star color ----- */
 
-.ok{
-    color: #0065fc;
+.ok {
+  color: #0065fc;
 }
-.no{
-    color: #f2f2f2;
+.no {
+  color: #f2f2f2;
+}
+
+/* ----- Acitity ----- */
+
+#activity_container{
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#activity_cards_container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 500px;
+  gap: 25px;
+}
+
+.activity_cards:nth-child(1),
+.activity_cards:nth-child(4){
+  height: 100%;
+}
+.activity_cards:nth-child(2){
+  height: 60%;
+}
+.activity_cards:nth-child(3){
+  height: 33%;
+}
+
+.activity_cards {
+  height: 46%;
+  overflow: hidden;
+  width: 23%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 2px #e6e6e6f4;
+}
+
+.activity_cards_figure{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.activity_cards_img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.activity_cards_title{
+  padding: 15px;
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+}
+
+/* ----- Footer ----- */
+
+footer{
+  background-color: #f2f2f2;
+  padding: 30px 50px;
+}
+
+h3{
+  margin: 15px 0px;
+}
+li{
+  margin: 10px 0px;
+}
+#footer_container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* --------------------- */
+
+/* ----- Media Queries ----- */
+
+/* --------------------- */
+
+/* ----- Tablet ----- */
