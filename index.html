@@ -16,11 +16,11 @@
 
     <header>
         <a href="#" id="header_logo">
-            <img id="header_logo_img" src="./images/logo/Booki.png" alt="Logo du site Booki">
+            <img id="header_logo_img" src="./images/logo/Booki@3x.png" alt="Logo du site Booki">
         </a>
         <nav id="header_nav">
-            <a href="" class="header_nav_link">Hébergements</a>
-            <a href="" class="header_nav_link">Activités</a>
+            <a href="#main_page_container" class="header_nav_link">Hébergements</a>
+            <a href="#activity_container" class="header_nav_link">Activités</a>
         </nav>
     </header>
 
@@ -34,34 +34,37 @@
             <div id="title_info">En plein centre ville ou en pleine nature</div>
 
             <div id="search_bar">
-                <form method="get">
+                <form id="search_bar_form"method="get">
                     <!-- aria - label -->
                     <!-- <label id="search_bar_label" for="search"> -->
-                    <i id="search_bar_logo" class="fa-solid fa-location-dot"></i>
+                    <i id="search_bar_logo" class="fa-solid fa-location-dot fa-lg"></i>
                     <!-- </label> -->
                     <input id="search_bar_text" type="text" name="search" placeholder="Marseille, France">
+                    <i id="search_bar_btn_logo" class="fa-solid fa-magnifying-glass fa-lg"></i>
                     <input id="search_bar_btn" type="submit" value="Rechercher">
                 </form>
             </div>
 
-            <div id="search_filter">
+            <div id="filter_container">
                 <p>Filtres</p>
-                <a class="search_filter_part" href="#">
-                    <em class="fa-solid fa-money-bill-wave search_filter_part_logo"></em>
-                    <p class="search_filter_part_text">Economique</p>
-                </a>
-                <a class="search_filter_part" href="#">
-                    <i class="fa-solid fa-child-reaching search_filter_part_logo"></i>
-                    <p class="search_filter_part_text">Familial</p>
-                </a>
-                <a class="search_filter_part" href="#">
-                    <i class="fa-solid fa-heart search_filter_part_logo"></i>
-                    <p class="search_filter_part_text">Romantique</p>
-                </a>
-                <a class="search_filter_part" href="#">
-                    <i class="fa-solid fa-dog search_filter_part_logo"></i>
-                    <p class="search_filter_part_text">Animaux autorisés</p>
-                </a>
+                <div id="filter">
+                    <a class="search_filter_part" href="#">
+                        <em class="fa-solid fa-money-bill-wave search_filter_part_logo"></em>
+                        <p class="search_filter_part_text">Economique</p>
+                    </a>
+                    <a class="search_filter_part" href="#">
+                        <i class="fa-solid fa-child-reaching search_filter_part_logo"></i>
+                        <p class="search_filter_part_text">Familial</p>
+                    </a>
+                    <a class="search_filter_part" href="#">
+                        <i class="fa-solid fa-heart search_filter_part_logo"></i>
+                        <p class="search_filter_part_text">Romantique</p>
+                    </a>
+                    <a class="search_filter_part" href="#">
+                        <i class="fa-solid fa-dog search_filter_part_logo"></i>
+                        <p class="search_filter_part_text">Animaux autorisés</p>
+                    </a>
+                </div>
             </div>
 
             <div id="search_info">
@@ -161,7 +164,7 @@
                         </figure>
                     </a>
                 </div>
-                <a href="#">Afficher plus</a>
+                <a href="#" id="more">Afficher plus</a>
             </div>
             <aside id="popular_container">
                 <h2>Les plus populaires</h2>
