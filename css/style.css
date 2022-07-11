@@ -20,7 +20,7 @@ main {
   margin: auto;
 }
 
-/* ----- Bold ----- */
+/* ===== Bold ===== */
 
 h1,
 h2,
@@ -35,7 +35,7 @@ em,
   font-weight: bold;
 }
 
-/* ----- Header ----- */
+/* ===== Header ===== */
 
 header {
   height: 130px;
@@ -71,7 +71,11 @@ header {
   color: #0065fc;
 }
 
-/* ----- Research ----- */
+/* ===== Research ===== */
+
+#search_container{
+  padding: 0px 20px;
+}
 
 h1 {
   font-size: 20px;
@@ -126,14 +130,16 @@ h1 {
   color: #fff;
 }
 
-/* ----- Filter ----- */
+/* ===== Filter ===== */
 
 #filter_container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 70%;
-  justify-content: space-between;
+}
+
+#filter_container span{
+  margin-right: 20px;
 }
 
 #filter {
@@ -177,7 +183,7 @@ h1 {
   text-align: center;
 }
 
-/* ----- Filter Icon Hover ----- */
+/* ===== Filter Icon Hover ===== */
 
 .search_filter_part::before {
   content: "";
@@ -198,7 +204,7 @@ h1 {
   border-radius: 50px;
 }
 
-/* ----- Research-Info ----- */
+/* ===== Research-Info ===== */
 
 #search_info {
   display: flex;
@@ -222,10 +228,11 @@ h1 {
   margin-left: 15px;
 }
 
-/* ----- Housing ----- */
+/* ===== Housing ===== */
 
 #main_page_container {
   margin-top: 30px;
+  padding: 0px 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -242,15 +249,14 @@ h1 {
 }
 
 #housing_cards_container {
-  align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  gap: 25px;
+  gap: 20px;
 }
 .housing_cards {
-  width: 230px;
-  height: 200px;
+  width: 30%;
+  flex-grow: 1;
   padding: 2px;
   overflow: hidden;
   border-radius: 20px;
@@ -267,10 +273,13 @@ h1 {
 }
 
 .housing_cards_info {
-  margin-left: 5px;
+  margin: 0px 10px;
 }
 
 .housing_cards_title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 16px;
   margin: 2px 0px;
 }
@@ -283,7 +292,7 @@ h1 {
   font-weight: bold;
 }
 
-/* ----- Most popular ----- */
+/* ===== Most popular ===== */
 #popular_container {
   display: flex;
   flex-direction: column;
@@ -300,9 +309,14 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 25px;
+  gap: 20px;
 }
 
+#popular_star_title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .popular_cards {
   display: flex;
   flex-direction: row;
@@ -315,8 +329,7 @@ h1 {
 }
 
 .popular_cards_img {
-  height: 100%;
-  width: 120px;
+  width: 35%;
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
 }
@@ -327,11 +340,22 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
 }
-.popular_cards_text {
-  margin: 10px 0px;
+.popular_cards_title {
+  margin-bottom: 10px;
 }
 
-/* ----- Star color ----- */
+/* - @Media fix for text overflow and hidden - */
+@media all and (max-width: 1102px){
+  #housing_container{
+    padding: 40px 20px;
+  }
+  #popular_container{
+    padding: 40px 20px;
+  }
+}
+/* - @Media END FIX - */
+
+/* ===== Star color ===== */
 
 .ok {
   color: #0065fc;
@@ -340,10 +364,11 @@ h1 {
   color: #f2f2f2;
 }
 
-/* ----- Acitity ----- */
+/* ===== Acitity ===== */
 
 #activity_container {
   margin: 50px 0px;
+  padding: 0px 20px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -400,15 +425,18 @@ h1 {
 }
 
 .activity_cards_title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 15px;
   font-size: 16px;
 }
 
-/* ----- Footer ----- */
+/* ===== Footer ===== */
 
 footer {
   background-color: #f2f2f2;
-  padding: 30px 0px;
+  padding: 30px 20px;
 }
 
 footer a:hover {
@@ -432,13 +460,13 @@ li {
   justify-content: space-between;
 }
 
-/* ---------------------------- */
+/* =========================--- */
 
-/* ----- Media Queries ----- */
+/* ===== Media Queries ===== */
 
-/* ---------------------- */
+/* ====================-- */
 
-/* ----- Desktop ----- */
+/* ===== Desktop ===== */
 
 @media screen and (max-width: 1150px) {
   #search_filter {
@@ -447,9 +475,9 @@ li {
   }
 }
 
-/* ----- Tablet ----- */
+/* ===== Tablet ===== */
 @media screen and (max-width: 992px) and (min-width: 769px) {
-  /* ----- Header ----- */
+  /* ===== Header ===== */
   header {
     width: auto;
     background-color: white;
@@ -490,7 +518,7 @@ li {
     color: #0065fc;
   }
 
-  /* ----- Search ----- */
+  /* ===== Search ===== */
 
   #search_container {
     margin: auto;
@@ -505,7 +533,6 @@ li {
 
   #search_bar {
     max-width: 400px;
-    margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -544,11 +571,10 @@ li {
     color: white;
   }
 
-  /* ----- Filter ----- */
+  /* ===== Filter ===== */
   #filter_container {
     flex-direction: column;
-    align-items: center;
-    width: 80%;
+    align-items: flex-start;
     margin: auto;
   }
 
@@ -556,8 +582,9 @@ li {
     justify-content: space-between;
   }
 
-  /* ----- Housing ----- */
+  /* ===== Housing ===== */
   #main_page_container {
+    padding: 0;
     flex-direction: column-reverse;
   }
 
@@ -578,7 +605,7 @@ li {
     width: 40%;
   }
 
-  /* ----- Most Popular ----- */
+  /* ===== Most Popular ===== */
 
   #popular_container {
     border-radius: 0px;
@@ -610,7 +637,7 @@ li {
     margin: 10px 0px;
   }
 
-  /* ----- Acitity ----- */
+  /* ===== Acitity ===== */
   #activity_container {
     padding: 40px 100px;
     margin: 0;
@@ -643,7 +670,7 @@ li {
     flex-grow: 1;
   }
 
-  /* ----- Footer ----- */
+  /* ===== Footer ===== */
 
   footer{
     padding: 40px 100px;
@@ -656,10 +683,10 @@ li {
 
 
 
-/* ----- Smartphone ----- */
+/* ===== Smartphone ===== */
 @media screen and (max-width: 768px) {
 
-  /* ----- Header ----- */
+  /* ===== Header ===== */
   header {
     width: 100%;
     background-color: white;
@@ -670,9 +697,6 @@ li {
   }
 
   #header_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 60px;
   }
 
@@ -700,7 +724,7 @@ li {
     color: #0065fc;
   }
 
-  /* ----- Search ----- */
+  /* ===== Search ===== */
 
   #search_container {
     max-width: 550px;
@@ -751,7 +775,7 @@ li {
     color: white;
   }
 
-  /* ----- Filter ----- */
+  /* ===== Filter ===== */
   #filter_container {
     flex-direction: column;
     align-items: flex-start;
@@ -762,16 +786,17 @@ li {
     justify-content: flex-start;
   }
 
-  /* ----- Housing ----- */
+  /* ===== Housing ===== */
   #main_page_container {
+    padding: 0;
     flex-direction: column-reverse;
   }
 
   #housing_container {
     background-color: white;
-    width: 100%;
+    width: auto;
     height: auto;
-    padding: 40px;
+    padding: 40px 70px;
     gap: 20px;
   }
 
@@ -783,13 +808,11 @@ li {
     width: 100%;
   }
 
-  /* ----- Most Popular ----- */
+  /* ===== Most Popular ===== */
 
   #popular_container {
-    max
-    /* margin: auto; */
-    padding: 0px;
-    border-radius: 0px;
+    padding: 40px 70px;
+    border-radius: 0;
     width: auto;
     height: auto;
     gap: 30px;
@@ -817,9 +840,9 @@ li {
     margin: 10px 0px;
   }
 
-  /* ----- Acitity ----- */
+  /* ===== Acitity ===== */
   #activity_container {
-    padding: 40px;
+    padding: 40px 70px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -849,10 +872,10 @@ li {
     width: 100%;
   }
 
-  /* ----- Footer ----- */
+  /* ===== Footer ===== */
 
   footer{
-    padding: 40px;
+    padding: 40px 70px;
   }
   #footer_container{
     flex-direction: column;
@@ -861,15 +884,12 @@ li {
   }
 }
 
-/* ----- Media 600 > 700 ----- */
-@media screen and (min-width: 600px) and (max-width: 768px){
-  #popular_container{
-    padding: 40px 70px;
-  }
-  #housing_container{
-    padding: 40px 70px;
-  }
-  #activity_container{
-    padding: 40px 70px;
+/* - @Media 600 Fix Container Padding - */
+@media screen and (max-width: 600px){
+  #popular_container,
+  #housing_container,
+  #activity_container,
+  footer{
+    padding: 40px 10px;
   }
 }
