@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f6c4359624.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +24,11 @@
         </nav>
     </header>
 
-    <!-- Main -->
+    <!-- ===== Main ===== -->
     <main>
 
         <!-- Repair: Replace your i elements with em or strong.  -->
-        <!-- Research -->
+        <!-- ===== Research ====== -->
         <section id="search_container">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <div id="title_info">En plein centre ville ou en pleine nature</div>
@@ -37,43 +37,43 @@
                 <form id="search_bar_form" method="get">
                     <!-- aria - label -->
                     <!-- <label id="search_bar_label" for="search"> -->
-                    <i id="search_bar_logo" class="fa-solid fa-location-dot fa-lg"></i>
+                    <em id="search_bar_logo" class="fa-solid fa-location-dot fa-lg"></em>
                     <!-- </label> -->
                     <input id="search_bar_text" type="text" name="search" placeholder="Marseille, France">
-                    <i id="search_bar_btn_logo" class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    <em id="search_bar_btn_logo" class="fa-solid fa-magnifying-glass fa-lg"></em>
                     <input id="search_bar_btn" type="submit" value="Rechercher">
                 </form>
             </div>
 
             <div id="filter_container">
-                <p>Filtres</p>
+                <span>Filtres</span>
                 <div id="filter">
                     <a class="search_filter_part" href="#">
                         <em class="fa-solid fa-money-bill-wave search_filter_part_logo"></em>
                         <p class="search_filter_part_text">Economique</p>
                     </a>
                     <a class="search_filter_part" href="#">
-                        <i class="fa-solid fa-child-reaching search_filter_part_logo"></i>
+                        <em class="fa-solid fa-child-reaching search_filter_part_logo"></em>
                         <p class="search_filter_part_text">Familial</p>
                     </a>
                     <a class="search_filter_part" href="#">
-                        <i class="fa-solid fa-heart search_filter_part_logo"></i>
+                        <em class="fa-solid fa-heart search_filter_part_logo"></em>
                         <p class="search_filter_part_text">Romantique</p>
                     </a>
                     <a class="search_filter_part" href="#">
-                        <i class="fa-solid fa-dog search_filter_part_logo"></i>
+                        <em class="fa-solid fa-dog search_filter_part_logo"></em>
                         <p class="search_filter_part_text">Animaux autorisés</p>
                     </a>
                 </div>
             </div>
 
             <div id="search_info">
-                <i id="search_info_icon" class="fa-solid fa-info fa-xs"></i>
+                <em id="search_info_icon" class="fa-solid fa-info fa-xs"></em>
                 <p id="search_info_text">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
 
-        <!-- Hébergements -->
+        <!-- ===== Hébergements ===== -->
         <section id="main_page_container">
             <div id="housing_container">
                 <h2>Hébergements à Marseille</h2>
@@ -85,81 +85,86 @@
                             <figcaption class="housing_cards_info">
                                 <p class="housing_cards_title">Auberge de la Cannebière</p>
                                 <p class="housing_cards_text">Nuit à partir de <em>25€</em></p>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs no"></i>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs no"></em>
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" class="housing_cards">
                         <figure>
-                            <img class="housing_cards_img" src="./images/hebergements/2_hotel_du_port.jpg" alt="Photo de l'hôtel du port">
+                            <img class="housing_cards_img" src="./images/hebergements/2_hotel_du_port.jpg"
+                                alt="Photo de l'hôtel du port">
                             <figcaption class="housing_cards_info">
                                 <p class="housing_cards_title">Hôtel du port</p>
                                 <p class="housing_cards_text">Nuit à partir de 52<em>€</em></p>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" class="housing_cards">
                         <figure>
-                            <img class="housing_cards_img" src="./images/hebergements/3_les_mouettes.jpg" alt="Photo de l'hôtel des mouettes">
+                            <img class="housing_cards_img" src="./images/hebergements/3_les_mouettes.jpg"
+                                alt="Photo de l'hôtel des mouettes">
                             <figcaption class="housing_cards_info">
                                 <p class="housing_cards_title">Hôtel Les mouettes</p>
                                 <p class="housing_cards_text">Nuit à partir de 76<em>€</em></p>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs no"></i>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs no"></em>
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" class="housing_cards">
                         <figure>
-                            <img class="housing_cards_img" src="./images/hebergements/4_hotel_de_la_mer.jpg" alt="Photo de l'hôtel de le mer">
+                            <img class="housing_cards_img" src="./images/hebergements/4_hotel_de_la_mer.jpg"
+                                alt="Photo de l'hôtel de le mer">
                             <figcaption class="housing_cards_info">
                                 <p class="housing_cards_title">Hôtel de le mer</p>
                                 <p class="housing_cards_text">Nuit à partir de 46<em>€</em></p>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs no"></i>
-                                <i class="fa-solid fa-star fa-xs no"></i>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs no"></em>
+                                <em class="fa-solid fa-star fa-xs no"></em>
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" class="housing_cards">
                         <figure>
-                            <img class="housing_cards_img" src="./images/hebergements/5_auberge_le_panier.jpg" alt="Photo de l'auberge 'le panier'">
+                            <img class="housing_cards_img" src="./images/hebergements/5_auberge_le_panier.jpg"
+                                alt="Photo de l'auberge 'le panier'">
                             <figcaption class="housing_cards_info">
                                 <p class="housing_cards_title">Auberge le Panier</p>
                                 <p class="housing_cards_text">Nuit à partir de <em>23€</em></p>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs no"></i>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs no"></em>
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#" class="housing_cards">
                         <figure>
-                            <img class="housing_cards_img" src="./images/hebergements/6_hotel_chez_amina.jpg" alt="Photo de l'hôtel 'Chez Amina'">
+                            <img class="housing_cards_img" src="./images/hebergements/6_hotel_chez_amina.jpg"
+                                alt="Photo de l'hôtel 'Chez Amina'">
                             <figcaption class="housing_cards_info">
                                 <p class="housing_cards_title">Hôtel chez Amina</p>
                                 <p class="housing_cards_text">Nuit à partir de 96<em>€</em></p>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
-                                <i class="fa-solid fa-star fa-xs ok"></i>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
+                                <em class="fa-solid fa-star fa-xs ok"></em>
                             </figcaption>
                         </figure>
                     </a>
@@ -167,12 +172,15 @@
                 <a href="#" id="more">Afficher plus</a>
             </div>
 
-            <!-- ----- Most Popular ----- -->
+            <!-- ===== Most Popular ===== -->
             <aside id="popular_container">
-                <h2>Les plus populaires</h2>
+                <div id="popular_star_title">
+                    <h2>Les plus populaires</h2>
+                    <em class="fa-solid fa-star fa-xl"></em>
+                </div>
                 <div id="popular_cards_container">
                     <a href="#">
-                        <figure class="popular_cards">
+                        <figure  class="popular_cards">
                             <img class="popular_cards_img" src="./images/hebergements/7_hotel_le_soleil_du_matin.jpg"
                                 alt="Photo de l'hôtel du soleil du matin">
                             <figcaption class="popular_cards_info">
@@ -181,29 +189,30 @@
                                     <p class="popular_cards_text">Nuit à partir de 71<em>€</em></p>
                                 </div>
                                 <div class="popular_cards_star">
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
                                 </div>
                             </figcaption>
                         </figure>
                     </a>
                     <a href="#">
                         <figure class="popular_cards">
-                            <img class="popular_cards_img" src="./images/hebergements/8_au_coeur_de_l'eau.jpg" alt="Photo des chambres d'hôtes 'au coeur de l'eau'">
+                            <img class="popular_cards_img" src="./images/hebergements/8_au_coeur_de_l'eau.jpg"
+                                alt="Photo des chambres d'hôtes 'au coeur de l'eau'">
                             <figcaption class="popular_cards_info">
                                 <div>
                                     <p class="popular_cards_title">Au coeur de l'eau Chambres d'hôtes</p>
                                     <p class="popular_cards_text">Nuit à partir de 71<em>€</em></p>
                                 </div>
                                 <div class="popular_cards_star">
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs no"></i>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs no"></em>
                                 </div>
                             </figcaption>
                         </figure>
@@ -218,11 +227,11 @@
                                     <p class="popular_cards_text">Nuit à partir de 68<em>€</em></p>
                                 </div>
                                 <div class="popular_cards_star">
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs ok"></i>
-                                    <i class="fa-solid fa-star fa-xs no"></i>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs ok"></em>
+                                    <em class="fa-solid fa-star fa-xs no"></em>
                                 </div>
                             </figcaption>
                         </figure>
@@ -231,63 +240,69 @@
             </aside>
         </section>
 
-        <!-- Activités -->
+        <!-- ===== Activités ===== -->
         <section id="activity_container">
             <h2>Activités à Marseille</h2>
             <div id="activity_cards_container">
                 <a href="#" class="activity_cards">
                     <figure class="activity_cards_figure">
-                        <img src="./images/activites/1_vieux_port.jpg" alt="Photo du vieux port" class="activity_cards_img">
-                        <figcatption class="activity_cards_info">
-                            <p>Vieux port</p>
-                        </figcatption>
+                        <img src="./images/activites/1_vieux_port.jpg" alt="Photo du vieux port"
+                            class="activity_cards_img">
+                        <figcaption class="activity_cards_info">
+                            <p class="activity_cards_title">Vieux port</p>
+                        </figcaption>
                     </figure>
                 </a>
                 <a href="#" class="activity_cards">
                     <figure class="activity_cards_figure">
-                        <img src="./images/activites/2_fort_de_pomegues.jpg" alt="Photo du Fort Pomègues" class="activity_cards_img">
-                        <figcatption class="activity_cards_info">
+                        <img src="./images/activites/2_fort_de_pomegues.jpg" alt="Photo du Fort Pomègues"
+                            class="activity_cards_img">
+                        <figcaption class="activity_cards_info">
                             <p class="activity_cards_title">Fort de Pomègues</p>
-                        </figcatption>
+                        </figcaption>
                     </figure>
                 </a>
                 <a href="#" class="activity_cards">
                     <figure class="activity_cards_figure">
-                        <img src="./images/activites/3_iles_du_freoul.jpg" alt="Photo des îles de fréoul" class="activity_cards_img">
-                        <figcatption class="activity_cards_info">
+                        <img src="./images/activites/3_iles_du_freoul.jpg" alt="Photo des îles de fréoul"
+                            class="activity_cards_img">
+                        <figcaption class="activity_cards_info">
                             <p class="activity_cards_title">îles du Frioul</p>
-                        </figcatption>
+                        </figcaption>
                     </figure>
                 </a>
                 <a href="#" class="activity_cards">
                     <figure class="activity_cards_figure">
                         <img src="./images/activites/4_parc_national_des_calanques.jpg" alt="Photo des calanques"
                             class="activity_cards_img">
-                        <figcatption class="activity_cards_info">
+                        <figcaption class="activity_cards_info">
                             <p class="activity_cards_title">Parc National des Calanques</p>
-                        </figcatption>
+                        </figcaption>
                     </figure>
                 </a>
                 <a href="#" class="activity_cards">
                     <figure class="activity_cards_figure">
-                        <img src="./images/activites/5_notre_dame_de_la_garde.jpg" alt="Photo de Notre-dame de la garde" class="activity_cards_img">
-                        <figcatption class="activity_cards_info">
+                        <img src="./images/activites/5_notre_dame_de_la_garde.jpg" alt="Photo de Notre-dame de la garde"
+                            class="activity_cards_img">
+                        <figcaption class="activity_cards_info">
                             <p class="activity_cards_title">Notre-Dame-de-la-Garde</p>
-                        </figcatption>
+                        </figcaption>
                     </figure>
                 </a>
                 <a href="#" class="activity_cards">
                     <figure class="activity_cards_figure">
-                        <img src="./images/activites/6_parc_longchamp.jpg" alt="Photo du parc Longchamp" class="activity_cards_img">
-                        <figcatption class="activity_cards_info">
+                        <img src="./images/activites/6_parc_longchamp.jpg" alt="Photo du parc Longchamp"
+                            class="activity_cards_img">
+                        <figcaption class="activity_cards_info">
                             <p class="activity_cards_title">Parc Longchamp</p>
-                        </figcatption>
+                        </figcaption>
                     </figure>
                 </a>
             </div>
         </section>
     </main>
 
+    <!-- ===== Footer ===== -->
     <footer>
         <div id="footer_container">
             <div id="about">
